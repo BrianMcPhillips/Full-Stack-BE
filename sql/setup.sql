@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS states;
+
+CREATE TABLE states (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  state_name TEXT NOT NULL,
+  electoral_votes INT NOT NULL,
+  winner TEXT NOT NULL
+)
